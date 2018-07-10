@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="../index.css" type="text/css" />
         <title>
             Create Reminder - To-Do Web App
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../index.js"></script>
     </head>
     <body>
-        <form action="#" method="get">
+        <div class="create">
             Reminder Name: 
-            <input type="text" name="rname" placeholder="Enter reminder name..."/>
+            <input type="text" class="create" id="rname" name="rname" placeholder="Enter reminder name..."/>
+            <br><br>
+            Pomodoro Estimate: 
+            <input type="text" class="create" id="rdur" name="rdur" placeholder="Enter est. completion time..."/>
             <br><br>
             Type of reminder:<br>
-            <input type="radio" name="rtype" value="repeat">
-                Scheduled repetitive reminder
+            <input type="radio" name="rtype" class="create" id="rtypeid" value="repeat">
+            Scheduled repetitive reminder
             </input><br>
-            <input type="radio" name="rtype" value="now">
-                Instant reminder
+            <input type="radio" name="rtype" class="create" id="rtypeid" value="now">
+            Instant reminder
             </input><br>
-            <input type="radio" name="rtype" value="once">
-                One-time scheduled reminder
-            </input><br><br>
-            <input type="submit" name="continue" value="Continue">
-        </form>
-        <?php include "fhandler.php";?>
+            <input type="radio" name="rtype" class="create" id="rtypeid" value="once">
+            One-time scheduled reminder
+            </input><br><br><hr>
+            <input type="submit" id="next" class="create" name="continue" value="Continue">
         <a href="../index.html"><input type="submit" name="exit" value="Cancel"></a>
+        </div>
     </body>
-    <script type="text/javascript" src="">
-        
-    </script>
 </html>
