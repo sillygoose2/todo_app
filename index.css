@@ -16,5 +16,5 @@ body{
 }
 .todos{background-color: #eee;padding: 2px;color: black;list-style: none;}
 .tododiv{background-color: #eee;padding: 2px;color: black;list-style: none;}
-.todos_sel{background-color: black;padding: 2px;color: #eee;list-style: none;}
-.complete{background-color: #000;padding: 2px;color: black;list-style: none;}
+.todos_sel{padding: 10px;color: #0e0;list-style: none;}
+.complete{background-color: #636363;padding: 2px;color: black;list-style: none;}
